@@ -9,6 +9,7 @@ import './styles/components/vp-sponsor.css'
 
 import type { Theme } from 'vitepress'
 import VPBadge from './components/VPBadge.vue'
+import VPImage from './components/VPImage.vue'
 import Layout from './Layout.vue'
 
 // Note: if we add more optional components here, i.e. components that are not
@@ -31,6 +32,7 @@ const theme: Theme = {
   Layout,
   enhanceApp: ({ app }) => {
     app.component('Badge', VPBadge)
+    app.component('Image', VPImage)
   }
 }
 
